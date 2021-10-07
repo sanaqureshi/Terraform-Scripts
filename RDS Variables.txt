@@ -1,0 +1,26 @@
+az : us-east-2a
+
+engine : mysql
+
+engine_version : 8.0
+
+identifier : mysqldb
+
+instance_class : db.t2.micro
+
+name : mysqldb
+
+parametergroup : mysql8
+
+port : 3306
+
+region : us-east-2
+
+username : root
+
+security_group_ids : ["sg-77dc393d"]
+
+region : us-east-2
+
+
+

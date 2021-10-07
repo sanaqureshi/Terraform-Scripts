@@ -1,0 +1,73 @@
+
+username : msadmin
+
+Access Key ID : AKIARMS3MZEV5QT4VDNS
+
+secret Access Key : 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
+
+--------------------------------------------------------------------
+
+
+Git Username : sana15079
+
+dashboard_password : Sana@1807
+
+Git password : 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
+
+
+resource "aws_lambda_event_source_mapping" "lambda-dbmap" {
+  event_source_arn  = "${aws_dynamodb_table.b.stream_arn}"
+  function_name     = "${aws_lambda_function.func.arn}"
+  starting_position = "LATEST"
+}
+
+resource "aws_lambda_event_source_mapping" "lambda-sqsmap" {
+  event_source_arn = "${aws_sqs_queue.mastek-sqs.arn}"
+  function_name    = "${aws_lambda_function.func.arn}"
+}
+
+------------------------------------------------------------------
+
+username : sadmin
+
+Access Key ID : AKIA5K3FD36HW5H5F6XH
+Secret Access Key : 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
+
+
+ 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
+
+---------------------------------------------------------------
+
+tom-s3 :
+
+AKIA5K3FD36H77LEZIZF
+
+bKImHntSsVM++AJKTeEzFCbDC1lSAE9Dytxn/sBK
+
+
+
+Git Credendtials :
+
+tom-s3-at-916650712975
+
+
+L7rmEjhBFS4JF/heq+MiuT9TMwJt+ADYtlwX0IbzHuM=
+
+--------------------------------------------------------------
+
+
+1) Document - Code Repository :
+
+	https://github.com/zealvora/terraform-beginner-to-advanced-resource
+
+2) Download Terraform :
+
+	https://www.terraform.io/downloads.html
+
+3) Editor for Terraform :
+ 	
+	https://atom.io
+
+4) Terraform Registry :
+	
+	https://registry.terraform.io
